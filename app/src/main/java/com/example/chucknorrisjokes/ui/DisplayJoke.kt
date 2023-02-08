@@ -64,6 +64,9 @@ class DisplayJoke : Fragment() {
 //                }
             }
         }
+        binding.viewContainer.setOnClickListener{
+            chuckNorrisViewModel.getData()
+        }
         return binding.root
     }
 }
